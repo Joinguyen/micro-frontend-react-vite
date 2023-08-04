@@ -1,0 +1,79 @@
+.tabs {
+	display: flex;
+	position: relative;
+	background-color: #F6F6F6;
+	box-shadow: 0px 5px 7px 1px rgba(144, 144, 144, 0.20) inset;
+	padding: 0;
+    border-radius: 30px;
+	* {
+		z-index: 2;
+	}
+}
+
+.tabs > input[type="radio"] {
+	display: none;
+}
+
+.tab {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 54px;
+	width: 50%;
+	font-size: 17px;
+	font-weight: 500;
+	border-radius: 30px;
+	cursor: pointer;
+	transition: color 0.15s ease-in;
+    color: #5A5A5A;
+    &-notification {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        margin-left: 0.75rem;
+        border-radius: 50%;
+        background-color: #e6eef9;
+        transition: 0.15s ease-in;
+    }
+}
+
+.tabs > input[type="radio"] {
+	&:checked {
+		& + label {
+			color: #fff;
+			& > .tab-notification {
+				background-color: #fff;
+				color: #FF2EAB;
+			}
+		}
+	}
+}
+
+.tabs > input[id="radio-1"] {
+	&:checked {
+		& ~ .glider {
+			transform: translateX(0);
+		}
+	}
+}
+
+.tabs > input[id="radio-2"] {
+	&:checked {
+		& ~ .glider {
+			transform: translateX(100%);
+		}
+	}
+}
+
+.glider {
+	position: absolute;
+	display: flex;
+	height: 54px;
+	width: 50%;
+	background-color: #FF2EAB;
+	z-index: 1;
+	border-radius: 99px; // just a high number to create pill effect
+	transition: 0.25s ease-out;
+}

@@ -1,0 +1,10 @@
+input.form-control.form-control-mc-border-bottom{
+    border: 0 solid transparent;
+    border-bottom: 2px solid #BDBDBD;
+    border-radius: 0;
+    background-color: transparent;
+    &:focus,
+    &.focus {
+        background-color: transparent;
+    }
+}

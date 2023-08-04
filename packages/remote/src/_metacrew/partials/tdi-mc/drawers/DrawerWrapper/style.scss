@@ -1,0 +1,158 @@
+#kt_drawer_wrapper{
+	top: 70px;
+	overflow-y: hidden;
+	background-color: transparent;
+    animation: animation-drawer-fade-in 0.3s ease-in-out 1;
+}
+#kt_drawer_wrapper_close{
+	margin: 20px auto 36px auto;
+}
+#kt_drawer_wrapper_messenger{
+	border-radius: 20px 20px 0px 0px;
+	padding: 0px 20px;
+	overflow-y: hidden;
+}
+#kt_drawer_wrapper_messenger_body{
+	height: calc(100vh - 150px);
+	display: flex;
+    flex-direction: column;
+}
+#kt_drawer_wrapper_messenger_body .scroll-y{
+	flex-grow: 1;
+}
+.drawer-bottom{
+	bottom: 0;
+    left: 0;
+	right: 0;
+    transform: translateY(100%);
+}
+.title-drawer-group{
+	color: #000;
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: -0.34px;
+	text-align: center;
+	margin-bottom: 58px;
+}
+.form-custom-input-border{
+	border-radius: 15px;
+	border: 1px solid #E0E0E0;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.15px;
+	padding: 12px 17px;
+	&::placeholder {
+		color: #9C9C9C;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: -0.15px;
+	}
+}
+.react-select-container{
+	margin-left: 1px;
+	.react-select__control.react-select__control--is-focused{
+		border-color: var(--bs-gray-400);
+		outline: 0;
+		box-shadow: false, 0 0 0 0.25rem rgba(var(--bs-component-active-bg), 0.25);
+	}
+	& .react-select__control {
+		border-radius: 15px;
+		border: 1px solid #E0E0E0;
+		padding: 4px 4px 3px 4px;
+		& .react-select__single-value{
+			color: #111;
+			font-size: 15px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			letter-spacing: -0.15px;
+		}
+		& .react-select__multi-value{
+			border-radius: 15px;
+			background-color: #FF2EAB;
+			box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+			// height: 24px;
+			& .react-select__multi-value__label{
+				color: #FFF;
+				font-size: 13px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+				padding: 4px 0px 4px 10px;
+			}
+			& .react-select__multi-value__remove{
+				color: #FF9DD8;
+				font-size: 13px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+				padding: 0px 3px 0px 0px;
+				 & svg{
+					width: 19px;
+    				height: 19px;
+				 }
+			}
+			
+		}
+		& .react-select__clear-indicator{
+			display: none;
+		}
+		& .react-select__indicator-separator{
+			display: none;
+		}
+		& .react-select__dropdown-indicator{
+			padding: 14px 10px 13px 10px;
+		}
+	}
+	
+}
+.form-custom-label{
+	color: #000;
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: -0.34px;
+	margin-bottom: 9px;
+}
+
+.form-custom-check{
+	> input.form-check-input{
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		background-color: #E7E7E7;
+		border-width: 4px;
+		border-color: transparent;
+		--bs-form-check-bg-image: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 13 11%27 width=%2713%27 height=%2711%27 fill=%27none%27%3e%3cpath d=%27M11.0426 1.02893C11.3258 0.695792 11.8254 0.655283 12.1585 0.938451C12.4917 1.22162 12.5322 1.72124 12.249 2.05437L5.51985 9.97104C5.23224 10.3094 4.72261 10.3451 4.3907 10.05L0.828197 6.88335C0.50141 6.59288 0.471975 6.09249 0.762452 5.7657C1.05293 5.43891 1.55332 5.40948 1.88011 5.69995L4.83765 8.32889L11.0426 1.02893Z%27 fill=%27%23A9A9A9%27/%3e%3c/svg%3e');
+		&:checked[type=radio]{
+			--bs-form-check-bg-image: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 13 11%27 width=%2713%27 height=%2711%27 fill=%27none%27%3e%3cpath d=%27M11.0426 1.02893C11.3258 0.695792 11.8254 0.655283 12.1585 0.938451C12.4917 1.22162 12.5322 1.72124 12.249 2.05437L5.51985 9.97104C5.23224 10.3094 4.72261 10.3451 4.3907 10.05L0.828197 6.88335C0.50141 6.59288 0.471975 6.09249 0.762452 5.7657C1.05293 5.43891 1.55332 5.40948 1.88011 5.69995L4.83765 8.32889L11.0426 1.02893Z%27 fill=%27%23ffffff%27/%3e%3c/svg%3e');
+			background-color: #FF2EAB;
+			border-color: transparent;
+		}
+	}
+	> .form-custom-check-label{
+		color: #111;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: -0.15px;
+		margin-left: 12px;
+	}
+}
+.react-select__menu {
+    & .react-select__option{
+        color: hsl(0, 0%, 20%);
+    }
+    & .react-select__option--is-focused, & .react-select__option--is-selected{
+        background-color: #ff81cd;
+        color: #fff;
+    }
+}

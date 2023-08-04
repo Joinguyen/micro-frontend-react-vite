@@ -1,0 +1,12 @@
+$colorTheme: #FF2EAB;
+.badge{
+    &.badge-mc-theme{
+        background-color: $colorTheme ;
+    }
+    @for $size from 20 through 25 {
+        &.badge-mc-#{$size} {
+            width: $size + px;
+            height: $size + px;
+        }
+    }
+}

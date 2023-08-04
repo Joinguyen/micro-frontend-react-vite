@@ -1,0 +1,12 @@
+.hidden-scroll{
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+#kt_app_header_wrapper{
+	position: fixed;
+    top: 0;
+}
+#kt_app_wrapper{
+	margin-top:64px;
+}

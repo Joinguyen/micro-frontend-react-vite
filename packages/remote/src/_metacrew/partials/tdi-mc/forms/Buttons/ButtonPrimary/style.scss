@@ -1,0 +1,17 @@
+.btn.btn-primary-mc{
+	border-radius: 30px;
+	background: #FF2EAB;
+	color: #FFF;
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: -0.34px;
+	padding: 18px 82px!important;
+	&:hover,
+	&:focus,
+	&:active {
+		color: #FFF;
+		background: #f828a5;
+	}
+}

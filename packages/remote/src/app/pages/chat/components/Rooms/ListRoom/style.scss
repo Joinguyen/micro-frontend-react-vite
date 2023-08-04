@@ -1,0 +1,8 @@
+#kt_chat_messenger_body_list_group_chat{
+	height: calc(100vh - 64px);
+	display: flex;
+    flex-direction: column;
+}
+#kt_chat_messenger_body_list_group_chat .scroll-y{
+	flex-grow: 1;
+}

@@ -1,0 +1,42 @@
+.box-group-tag{
+	border-radius: 30px;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.00) 100%);
+	padding:  22px 29px 17px 25px;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+.btn.btn-clock-group-tag{
+	filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+	width: 33px;
+	height: 33px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+.title-top-group-tag{
+	color: #FFF;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	letter-spacing: -0.2px;
+}
+.title-middle-group-tag{
+	color: #FFF;
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: -0.34px;
+	margin-bottom: 17px;
+	margin-top: 2px;
+}
+.title-bottom-group-tag{
+	color: #FFF;
+	font-family: Roboto;
+	font-size: 7px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	letter-spacing: -0.14px;
+}

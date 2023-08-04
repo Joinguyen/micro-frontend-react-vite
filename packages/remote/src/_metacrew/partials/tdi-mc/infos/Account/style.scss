@@ -1,0 +1,40 @@
+.box-account{
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+    padding: 24px 30px 24px 18px;
+}
+.name-account{
+    color: #333;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.17px;
+    margin-bottom: 5px;
+}
+.sub-account{
+    color: #BDBDBD;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.15px;
+}
+.btn-account{
+    color: #000;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.34px;
+}
+.btn.btn-next-account{
+    width: 33px;
+    height: 33px;
+    background-color: #FF2EAB;
+    border-radius: 50%;
+    & svg{
+        margin-left: 2px;
+    }
+}

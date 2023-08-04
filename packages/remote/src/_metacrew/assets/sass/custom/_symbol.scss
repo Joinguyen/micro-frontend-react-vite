@@ -1,0 +1,9 @@
+
+@for $size from 40 through 60 {
+  .symbol-mc-#{$size} {
+    > img, > .symbol-label {
+      width: $size + px;
+      height: $size + px;
+    } 
+  }
+}

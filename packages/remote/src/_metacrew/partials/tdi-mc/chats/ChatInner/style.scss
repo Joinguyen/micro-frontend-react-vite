@@ -1,0 +1,12 @@
+#kt_chat_messenger_body_chat_inner{
+	height: calc(100vh - 64px);
+	display: flex;
+    flex-direction: column;
+}
+#kt_chat_messenger_body_chat_inner .scroll-y{
+	flex-grow: 1;
+}
+.form-message{
+	padding-top:10px;
+	margin-bottom: 37px;
+}

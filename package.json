@@ -9,7 +9,7 @@
     "author": "@joi",
     "license": "JoiPSL-2.0",
     "scripts": {
-      "start": "pnpm --parallel --filter \"./packages/**\" preview",
+      "start": "pnpm --parallel --filter \"./packages/**\" serve",
       "build": "pnpm --parallel --filter \"./packages/**\" build",
       "serve": "pnpm --parallel --filter \"./packages/**\" preview",
       "build:remotes": "pnpm --parallel --filter \"./packages/remote\" --filter \"./packages/remote2\" build",

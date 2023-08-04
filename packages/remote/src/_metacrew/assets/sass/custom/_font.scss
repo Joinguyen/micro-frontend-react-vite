@@ -1,0 +1,11 @@
+@for $i from 14 through 30 {
+    .fs-mc-#{$i} {
+      font-size: $i + px; 
+    }
+}
+
+@for $i from 1 through 9 {
+    .fw-mc-#{$i*100} {
+      font-weight: $i*100; 
+    }
+}
