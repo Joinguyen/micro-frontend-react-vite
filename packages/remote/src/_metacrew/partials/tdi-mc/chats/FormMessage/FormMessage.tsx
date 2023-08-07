@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { ChangeEventHandler, FC, useCallback, useRef, useState } from 'react';
+import React, { ChangeEventHandler, FC, useCallback, useRef, useState } from 'react';
 import { MessageModel, toAbsoluteUrl, } from '../../../../helpers';
-import { useDropzone } from 'react-dropzone';
 import './style.scss';
+import { useDropzone } from 'react-dropzone';
 
 type Props = {
   isDrawer?: boolean,
@@ -19,12 +19,11 @@ const FormMessage: FC<Props> = ({ isDrawer = false, className = '', sendMessage 
   const [isShowEmoji, setIsShowEmoji] = useState<boolean>(false);
   const [files, setFiles] = useState([]);
 
-
   const onDrop = useCallback((acceptedFiles: any) => {
     setFiles(acceptedFiles.map((file: any) => Object.assign(file, {
       preview: URL.createObjectURL(file)
     })));
-  }, [])
+  }, []);
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop })
 
   const handleSendMessage = (messageInput: undefined | string = '') => {

@@ -13,18 +13,19 @@ export default defineConfig({
       name: "remoteAppC",
       filename: "remoteEntry.js",
       exposes: {
-        './AppC': './src/app/App',
-        './UserList': './src/app/pages/chat/components/UserList/UserList',
+        './AppC': './src/main',
+        './Main': './src/bootstrap'
       },
-      shared: {
-        ...dependencies,
-        react: {
-          requiredVersion: dependencies['react'],
-        },
-        'react-dom': {
-          requiredVersion: dependencies['react-dom'],
-        },
-      }
+      shared: []
+      // {
+      //   ...dependencies,
+      //   'react': {
+      //     requiredVersion: dependencies['react'],
+      //   },
+      //   'react-dom': {
+      //     requiredVersion: dependencies['react-dom'],
+      //   },
+      // }
     })
   ],
   resolve: {

@@ -3,7 +3,7 @@ import {ThemeModeComponent} from '../../../assets/ts/layout'
 import {toAbsoluteUrl} from '../../../helpers'
 
 export type ThemeModeType = 'dark' | 'light' | 'system'
-export const themeModelSKey = 'kt_theme_mode_value'
+export const themeModelSKey = 'mc_theme_mode_value'
 export const themeMenuModeLSKey = 'kt_theme_mode_menu'
 
 const systemMode = ThemeModeComponent.getSystemMode() as 'light' | 'dark'

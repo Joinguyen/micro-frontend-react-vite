@@ -5,12 +5,12 @@ import { AuthPage, Logout } from '../pages/auth'
 import { ErrorsPage } from '../pages/errors/ErrorsPage'
 import { PrivateRoutes } from './PrivateRoutes'
 
-const REACT_APP_PUBLIC_URL  = import.meta.env.REACT_APP_PUBLIC_URL || '';
+const VITE_APP_PUBLIC_URL  = import.meta.env.VITE_APP_PUBLIC_URL || '';
 
 const AppRoutes: FC = () => {
   const { currentUser = true } = {}; //useAuth()
   return (
-    <BrowserRouter basename={REACT_APP_PUBLIC_URL}>
+    <BrowserRouter basename={VITE_APP_PUBLIC_URL}>
       <Routes>
         <Route element={<App />}>
           <Route path='error/*' element={<ErrorsPage />} />

@@ -15,15 +15,7 @@ export default defineConfig({
       exposes: {
         './AppL': './src/main'
       },
-      shared: {
-        ...dependencies,
-        react: {
-          requiredVersion: dependencies['react'],
-        },
-        'react-dom': {
-          requiredVersion: dependencies['react-dom'],
-        },
-      }
+      shared: []
     })
   ],
   resolve: {
@@ -45,3 +37,14 @@ export default defineConfig({
     // },
   }
 })
+
+
+// {
+//   ...dependencies,
+//   'react': {
+//     requiredVersion: dependencies['react'],
+//   },
+//   'react-dom': {
+//     requiredVersion: dependencies['react-dom'],
+//   },
+// }

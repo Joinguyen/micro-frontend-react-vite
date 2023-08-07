@@ -1,1 +1,1 @@
-export const toAbsoluteUrl = (pathname: string) => (import.meta.env.REACT_APP_PUBLIC_URL || '') + pathname
+export const toAbsoluteUrl = (pathname: string) => (import.meta.env.VITE_APP_PUBLIC_URL || '') + pathname

@@ -28,7 +28,7 @@ const ListRoom: FC = () => {
     }
   }, [setComponentRight]);
   return (
-    <div className='d-flex flex-column bg-screen-group'>
+    <div className='d-flex flex-column'>
       <div className='flex-column w-100'>
         <div className='card-body pt-0' id='kt_chat_messenger_body_list_group_chat'>
           <div
